@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>IRF - Contact</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3583cb185d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<!--///////////////////////////HEADER//////////////////////////////-->
+        <header> 
+            <!--MENU-->
+            <div class="align-items-center ">
+                <!--Navigation-->
+                <nav class="navbar fixed-top p-0 navbar-light bg-white navbar-expand-lg shadow-sm d-flex">
+                    <a class="navbar-brand p-2 p-lg-3 ml-lg-4" href="index.html">
+                        <img class="pl-4 image-size align-self-center" src="img/logo-irf.png" alt="logo de l'irf">
+                    </a>
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler second-button ml-auto border-0 bg-button-menu height-square" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
+                    </button> 
+                    <div class="menu-mobile navbar-collapse">
+                        <ul class="navbar-nav collapse bg-white align-items-center ml-auto" id="navbarSupportedContent">
+                            <li class="nav-item pr-lg-3 pt-4 pt-lg-0">
+                                <a class="nav-link" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item pr-lg-3">
+                                <a class="nav-link" href="therapies.html">Thérapies</a>
+                            </li>
+                            <li class="nav-item pr-lg-3">
+                                <a class="nav-link" href="formations.html">Formations</a>
+                            </li>
+                            <li class="nav-item pr-lg-3">
+                                <a class="nav-link" href="evaluations.html">Evaluations</a>
+                            </li>
+                            <li class="nav-item pr-lg-3">
+                                <a class="nav-link" href="partenaires.html">Partenaires</a>
+                            </li>
+                            <li class="nav-item active pr-lg-3">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item pb-4 pb-lg-0">
+                                <a class="nav-link" href="noussoutenir.html">Nous soutenir</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown bleu height-square d-flex flex-column justify-content-center">
+                        <a class="nav-link dropdown-toggle text-white text-center police-menu" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">FR</a> <!-- lien -->
+                        <div class="dropdown-menu border-0">
+                        <a class="dropdown-item police-menu" href="#">FR</a>
+                        <a class="dropdown-item police-menu" href="#">NL</a>
+                        <a class="dropdown-item police-menu" href="#">EN</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- /Header -->
+<!--///////////////////////////MAIN//////////////////////////////-->
+        <main class="main bg-main row justify-content-center container-fluid px-0 mb-0 ml-0 mr-0">
+            <section class="col-12 col-lg-5 px-md-5 pb-5">
+                <h1 class="color-vert px-4 px-lg-5 pt-5 pb-2 m-0 mt-1 text-capitalize">Contact</h1>
+                <p class="col-9 gris-txt pl-4 pl-lg-5 pb-2 text-align-left" style="max-width: 300px;">L'information que vous cherchez ne se trouve pas sur notre site ? 
+                   <br> Contactez-nous !</p>
+                   <form class="px-4 px-lg-5 m-0">
+                    <fieldset class="m-0 p-0">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="nom" placeholder="Objet du message">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Votre email">
+                        </div>
+                      <div class="form-group">
+                        <textarea class="form-control" id="bio" rows="5" placeholder="Votre message"></textarea>
+                      </div>
+                      <button class="btn btn-envoyer vert text-white " type="submit">Envoyer</button>
+                    </fieldset>
+                  </form>
+            </section>
+            <section class="col-12 col-md-7 p-0">
+                <button data-toggle="modal" data-target="#myModal">
+                    <img class="w-100" src="img/Plan.jpg" alt="Plan d'accès à l'IRF" >
+                </button>
+            </section>
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <button type="button" class="close" id="b-modal" data-dismiss="modal" >&times;</button>
+                            <img class="w-100 plan" src="img/Plan.jpg" alt="Plan d'accès à l'IRF" >
+                        </div>            
+                    </div>
+                </div>
+            </div>
+        </main> 
+        <!--///////////////////////////FOOTER////////////////////////////////////////////////////-->
+        <footer class="container-fluid">
+            <div class="row m-0">
+                <!--Partie 1 - Newsletter -->
+                <div class="col-md-4 py-4 px-1 bg-red vert">
+                    <h5 class="mt-1 text-center text-uppercase text-white">Newsletter</h5>
+                    <hr class="mx-5 bg-main">
+                    <p class="mx-5 px-3 text-center text-justify text-white police14">Restez au courant des stages et formations de l'IRF en vous inscrivant à notre Newsletter !</p>
+                    <!--Newsletter-->
+                    <form class="mx-5">
+                        <div class="input-group input-group-md mb-3">
+                            <input type="email" class="form-control border-0" placeholder="Votre email" aria-label="Autre input type texte avec bouton" aria-describedby="texte-bouton">
+                            <div class="input-group-append">
+                                <button class="btn border-0 gris shadow bouton-news" type="submit" id="texte-bouton">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--Partie 2 - Informations -->
+                <div class="col-md-8 py-5 py-md-4 px-5 bg-yellow bleu text-white">
+                    <div class="pb-3">
+                        <h6 class="mb-0 mt-md-1">IRF - Intensive Rehabilitation Foundation</h6>
+                        <p class="police12 m-0">19/3 Avenue Edmond Parmentier
+                           </p>
+                        <p class="police12 m-0">
+                            1150 Bruxelles</p>
+                    </div>
+                    <div class="row pt-2 pt-md-0">
+                        <div class="col-md-auto pt-3 d-flex flex-column">
+                            <h6 class="text-uppercase">Inscriptions</h6>
+                            <a class="police12 text-white" href="stages.html">Stages</a>
+                            <a class="police12 text-white" href="formations.html">Formations</a>
+                        </div>
+                        <div class="mt-3 mx-1 mx-lg-4 border-right"></div>
+                        <div class="col-md-auto pt-3 d-flex flex-column">
+                            <h6 class="text-uppercase">Collaborations</h6>
+                            <a class="police12 text-white" href="partenaires.html">Superviseurs HABIT-ILE</a>
+                            <a class="police12 text-white" href="partenaires.html">Thérapeutes HABIT-ILE</a>
+                        </div>
+                        <div class="mt-3 mx-1 mx-lg-4 border-right"></div>
+                        <div class="col-md-auto pt-3 d-flex flex-column">
+                            <h6 class="text-uppercase">Service</h6>
+                            <a class="police12 text-white" href="evaluations.html">Scoring & évaluation</a> 
+                        </div>
+                        <div class="mt-3 mx-1 mx-lg-4 border-right"></div>
+                        <div class="col-md-auto pt-3 d-flex flex-column">
+                            <h6 class="text-uppercase">Contact</h6>
+                            <a class="text-white" href="mailto:intensiverehabfoundation@gmail.com"><i class="far fa-envelope fa-lg"></i></a>
+                        </div>
+                    </div>
+                    <div class="bleu text-white mt-4 py-2">
+                        <p class="police12 border-top m-0 pt-2"> © IRF - Intensive Rehabilitation Foundation 2020 All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

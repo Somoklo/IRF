@@ -1,0 +1,668 @@
+
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+body {
+	display : table;
+	width: 100%;
+}
+footer {
+	display : table-row;
+	height: 100px; /* à titre d'exemple */
+}
+/*////////Général////////*/
+
+.bg-main{
+    background-color: #f0f0f0;
+}
+.bg-white-opacity{
+    background-color: rgba(250, 250, 250, 0.8);
+}
+.bleu{
+    background-color: #2E3F50;
+}
+.vert{
+    background-color: #33B5A1;  
+}
+.gris{
+    background-color: #F0F0F0;
+}
+.color-bleu{
+    color: #2E3F50;
+}
+.color-bleu:hover{
+    color: #2CB4A0;
+}
+.color-vert{
+    color: #2CB4A0;  
+}
+.color-jaune{
+    color: #FDC613;  
+}
+.gris-txt{
+    color: #707070;
+}
+.grisC{
+    color: #707070;
+    opacity:0.7;
+}
+.main-accueil{
+    padding-top: 5rem;
+}
+main{
+    margin-top: 71px;
+}
+
+/*Police*/
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+
+h4{
+    font-weight: 700; 
+    color: #707070;
+}
+
+p,a{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ptac{
+    text-align: center;
+}
+
+p{
+    opacity: 0.8;
+}
+
+.police14{
+    font-size: 14px;
+}
+
+.police12{
+    font-size: 12px;
+}
+
+.graisse-bold{
+    font-weight: 700;
+}
+
+.police-menu{
+    font-size: 0.9rem;
+}
+button{
+    border:none;
+}
+button:focus{
+    outline: none;
+}
+a:hover{
+    text-decoration: none;
+}
+/*///////Footer////////*/
+.fa-envelope:hover{
+    font-weight: 700;
+}
+
+/*///////PAGE ACCUEIL////////*/
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #2CB4A0;
+    font-weight: 500;
+}
+.menu-mobile{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin-top: 141px;
+}
+
+.navbar-nav{
+    box-shadow: inset 0px 1px 5px;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.image-size{
+    height: 55px;
+}
+
+.personne{
+    width: 12rem;
+}
+
+.height-square{
+    height: 71px;
+    width: 71px;
+}
+
+.bg-button-menu{
+    background-color: #33B5A1;
+    border-radius: 0;
+}
+
+.fa-landmark{
+    color:#5ECEFF;
+}
+
+.fa-bullseye{
+    color:#FDC613;
+}
+
+.fa-universal-access{
+    color:#33B5A1;
+}
+
+.bouton-news:hover{
+    background-color: #2E3F50;
+}
+
+.bouton-news:hover .fa-paper-plane{
+    color: white;
+}
+
+.fa-paper-plane{
+    color: #2E3F50;
+}
+
+/* Burger menu */
+
+.animated-icon2 {
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    }
+    
+   .animated-icon2 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    }
+    
+    .animated-icon2 span {
+    background: white;
+    }
+    /* Icon 3*/
+    
+    .animated-icon2 span:nth-child(1) {
+    top: 0px;
+    }
+    
+    .animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+    top: 10px;
+    }
+    
+    .animated-icon2 span:nth-child(4) {
+    top: 20px;
+    }
+    
+    .animated-icon2.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+    }
+    
+    .animated-icon2.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+    
+    .animated-icon2.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    }
+    
+    .animated-icon2.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+    }
+
+/*////////Page Thérapies///////*/
+.image-back, .image-back-2{  
+    /* Full height */
+    width: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-back-therapies{
+    /* The image used */
+    background-image: url("../img/DSCN2521.JPG");
+    height: 320px;
+}
+
+.bg-opaque{
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.bouton{
+    border: 3px solid #33B5A1;
+    border-radius: 10px;
+    background-color: #33B5A1;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+}
+
+.bouton1{
+    font-size: 21px;
+    max-width: 335px;
+}
+.bouton:hover{
+    border-color: #3dd3bc;
+    background-color: #3dd3bc;
+}
+.bouton2{
+    font-size: 20px;
+    max-width: 315px;
+}
+
+/*////////CAROUSEL////////*/
+.carousel {	
+	margin: 0 auto;
+}
+.carousel .carousel-item {
+	text-align: center;
+	overflow: hidden;
+}
+.carousel .carousel-item .img-box {
+	background: #fff;
+	padding: 9px;
+	box-shadow: 0 6px 20px -6px rgba(0,0,0,0.4);
+}
+.carousel .carousel-item img {
+	margin: 0 auto;
+}
+.carousel-control-prev, .carousel-control-next {
+    background: none;
+    opacity: 100%;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 28px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin-top: -15px;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: #33B5A1;
+	text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel-indicators {
+	bottom: -15px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	border: none;
+	border-radius: 50%;
+	margin: 1px 4px;
+}
+.carousel-indicators li {	
+    background: #707070;
+    opacity: 100%;
+}
+.carousel-indicators li.active {
+	background: #33B5A1;
+}
+
+/*////////Page Stages///////*/
+.image-back-stages{
+    /* The image used */
+    background-image: url("../img/DSCN2383.JPG");
+    height: 250px;
+}
+.border-top-w{
+    border-top-width: 5px !important;
+    border-top-style: solid !important;
+    border-top-color: #F0F0F0 !important;
+}
+.width-fa{
+    width: 80px;
+}
+.fa-chevron-down{
+    height: 30px;
+    border-color: #33B5A1 !important;
+}
+.clic{
+    cursor: pointer;
+}
+.bouton-inscription:hover{
+    background-color: #2E3F50;
+}
+
+/*Accordeon*/
+
+ul {
+    list-style-type: none
+  }
+  
+  .accordeon {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 0px
+  }
+  
+  .accordeon li:last-child .link {
+    border-bottom: 0
+  }
+  
+  .fa {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease
+  }
+  
+  .accordeon li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px
+  }
+  
+  .accordeon li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg)
+  }
+  
+  .submenu {
+    display: none;
+  }
+
+/*////////Page Formation///////*/
+.image-back-formation{
+    /* The image used */
+    background-image: url("../img/you-x-ventures-Oalh2MojUuk-unsplash.jpg");
+    height: 250px;
+}
+/*////////Page Partenaires///////*/
+.image-back-partenaires{
+    /* The image used */
+    background-image: url("../img/chris-liverani-9cd8qOgeNIY-unsplash.jpg");
+    height: 250px;
+}
+.logo-partenaire{
+    height:30px;
+}
+.logo-partenaire2{
+    height:40px;
+}
+
+/* Horizontal line */
+.collapsible-link::before {
+    content: '';
+    width: 14px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 1rem;
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  /* Vertical line */
+  .collapsible-link::after {
+    content: '';
+    width: 2px;
+    height: 14px;
+    background: white;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: calc(1rem + 6px);
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  .collapsible-link[aria-expanded='true']::after {
+    transform: rotate(90deg) translateX(-1px);
+  }
+  
+  .collapsible-link[aria-expanded='true']::before {
+    transform: rotate(180deg);
+  }
+/*Bouton liste thérapeutes partenaires*/
+.flat-butt {
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 6px;
+    font-family: "Lato", sans-serif;
+    font-size: 16.5px;
+    padding: 12px 20px;
+    border: 0;
+    background: #34495E;
+    color: #FFF;
+    cursor: pointer;
+    outline: 0;
+  }
+  .flat-butt:hover {
+    background: #005580;
+  }
+  .flat-primary-butt {
+    background: #33B5A1;
+  }
+  .flat-primary-butt:hover {
+    background: #3dd3bc;
+  }
+.flat-double-butt {
+    padding: 8px 20px;
+    border: 3px solid #FFF;
+    box-shadow: #34495E 0px 0px 0px 3px;
+  }
+  .flat-double-butt:hover {
+    box-shadow: #005580 0px 0px 0px 3px;
+  }
+  .flat-primary-grad-butt {
+    background-image: linear-gradient(#33B5A1 50%, #2f9e8d 50%);
+  }
+
+/*////////Page Evaluation///////*/
+.image-back-evaluation{
+    /* The image used */
+    background-image: url("../img/annie-spratt-ORDz1m1-q0I-unsplash.jpg");
+    min-height: 250px;
+}
+/*////////Page Contact///////*/
+.form-control{
+    border:none;
+}
+/*////////Page Nous soutenir///////*/
+.image-back-soutien{
+    /* The image used */
+    background-image: url("../img/kelly-sikkema-4le7k9XVYjE-unsplash.jpg");
+    min-height: 350px;
+}
+.btn-envoyer:hover{
+    background-color: #2E3F50;
+}
+.form-control:focus{
+    border: 2px #33B5A1 solid;
+}
+.text-leg{
+    width: 100%;
+}
+/*///////SCALES//////////////////////////////////////*/
+
+@media (min-width: 580px) {
+    .image-back-therapies,.image-back-evaluation{
+        min-height: 350px;
+    }
+}
+@media (min-width: 768px) {
+    .paragraphe-intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image-back-therapies{
+        height: 450px;
+    }
+    .image-back-2{
+        height: 350px;
+    }
+    .bouton-inscription,.infos-inscriptions{
+        border-radius: 0 0 15px 15px;
+    }
+    .fiche-info{
+        display: flex;
+    }
+    /*Thérapeutes partenaires + et - */
+    /* Horizontal line */
+    .collapsible-link::before {
+        right: 2rem;
+    }
+    
+    /* Vertical line */
+    .collapsible-link::after {
+        right: calc(2rem + 6px);
+    }
+    .bouton1{
+        font-size: 18px;
+        max-width: 295px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+        background-color: #2CB4A0;
+        color: white;
+        font-weight: 500;
+    }
+    .navbar-nav{
+        display: inline-flex !important;
+        box-shadow: none;
+    }
+    main{
+        margin-top: 92px;
+    }
+    .menu-mobile{
+        position: relative;
+        margin-top: 0px;
+    }
+    .menu-mobile>ul{
+        padding-top: 0;  
+        padding-bottom: 0;  
+    }
+    .image-size {
+        height: 60px;
+    }
+    .height-square{
+        height: auto;
+    }
+    .titre{
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+    }
+    .titre-entete{
+        font-size: 2.8rem;
+    }
+    .article-carousel{
+        display: flex;
+    }
+    .article-carousel>div>p{
+        font-size: 14px;
+    }
+    .image-back-therapies{
+        height: 500px;
+    }
+    .image-back-2{
+        height: 430px;
+    }
+    .bouton1{
+        font-size: 21px;
+        max-width: 335px;
+    }
+}
+@media (min-width: 1120px) {
+    .menu-mobile{
+        padding-right: 1.5rem!important;
+    }
+    .bouton1{
+        font-size: 25px;
+        max-width: 375px;
+    }
+}
+@media (min-width: 1180px) {
+
+    .titre{
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+    }
+    .en-tête{
+        display: flex;
+        align-items: center;
+    }
+    /*Thérapeutes partenaires + et - */
+    /* Horizontal line */
+    .collapsible-link::before {
+        right: 3rem;
+    }
+    
+    /* Vertical line */
+    .collapsible-link::after {
+        right: calc(3rem + 6px);
+    }
+}
+@media (min-width: 1400px) {
+
+    .paragraphe-intro>p{
+        font-size: 1.2rem;
+    }
+    .text-leg{
+        width: 75%;
+    }
+}
+/*//////////MAX////////////*/
+@media (max-width: 1280px) {
+    .carousel-width{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
